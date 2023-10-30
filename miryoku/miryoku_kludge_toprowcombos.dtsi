@@ -48,7 +48,10 @@ toprowcombos_ ## LAYER ## _ ## POSITION { \
   #elif defined (MIRYOKU_ALPHAS_BEAKL15)
     #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
   #elif defined (MIRYOKU_ALPHAS_COLEMAK)
-    #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
+    MIRYOKU_KLUDGE_TOPROWCOMBOS_MACRO(U_BASE, LEFTPINKIE, &kp Q)
+    MIRYOKU_KLUDGE_TOPROWCOMBOS_MACRO(U_BASE, LEFTINNERINDEX, &kp G)
+    MIRYOKU_KLUDGE_TOPROWCOMBOS_MACRO(U_BASE, RIGHTINNERINDEX, &kp J)
+    MIRYOKU_KLUDGE_TOPROWCOMBOS_MACRO(U_BASE, RIGHTPINKIE, &kp SQT)
   #elif defined (MIRYOKU_ALPHAS_COLEMAKDHK)
     #error "Not implemented. See https://github.com/manna-harbour/miryoku/issues/56"
   #elif defined (MIRYOKU_ALPHAS_DVORAK)
